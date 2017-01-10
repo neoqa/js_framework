@@ -1,0 +1,1 @@
+ssh -L dst_host_adress:27017 dev@ssh_host_adress -p 22049 -nNT

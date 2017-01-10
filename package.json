@@ -1,0 +1,27 @@
+{
+    "name": "Framework",
+    "version": "1.0.0",
+     "description": "Testing framework",
+    "author": "V.Rumak",
+    "scripts":
+    {
+        "test": "cross-env environment=dev mocha --opts mocha.opts tests/ui/tests_runner.js > jen_results/ui_results.xml",
+        "test-api": "cross-env environment=dev mocha --opts mocha.opts tests/api/tests_runner.js > jen_results/api_results.xml",
+        "hand-run": "cross-env environment=dev mocha --opts mocha.opts tests/api/tests_runner.js"
+    },
+    "dependencies": 
+    {
+        "babel-cli": "^6.16.0",
+        "babel-preset-es2015": "^6.18.0",
+        "babel-preset-stage-0": "^6.16.0",
+        "babel-plugin-transform-runtime": "^6.15.0",
+        "chai": "^3.5.0",
+        "cross-env": "^3.1.3",
+        "mocha": "^3.1.2",
+        "chakram": "^1.5.0",
+        "selenium-webdriver": "^3.0.1",
+        "mongoskin": "^2.1.0",
+        "tunnel-ssh": "^4.1.1",
+        "file-system": "^2.2.2"
+    }
+}
